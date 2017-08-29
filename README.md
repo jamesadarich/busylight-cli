@@ -2,6 +2,10 @@
 
 Set your kuando busylight - no messing
 
+```
+npm install busylight-cli -g
+```
+
 Set your light red
 ```
 busylight busy
