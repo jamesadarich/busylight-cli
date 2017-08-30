@@ -3,6 +3,10 @@
   "version": "1.2.0",
   "description": "CLI for kuando busylight",
   "main": "index.js",
+  "repository": {    
+    "type": "git",
+    "url": "git+https://github.com/jamesrichford/busylight-cli.git"
+  },
   "bin": {
     "busylight": "./dist/busylight-cli.js"
   },
