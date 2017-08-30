@@ -1,5 +1,11 @@
+# npm
+.npmignore
+
 # source
 src
 
 # git
 .gitignore
+
+# typescript
+tsconfig.json
