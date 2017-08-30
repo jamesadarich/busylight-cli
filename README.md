@@ -15,3 +15,20 @@ Set your light green
 ```
 busylight free
 ```
+
+Set your light to your mood
+```
+busylight pink
+```
+
+## effects
+
+Pulse your light
+```
+busylight busy --pulse
+```
+
+Or blink instead
+```
+busylight busy --blink
+```

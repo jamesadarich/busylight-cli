@@ -2,31 +2,34 @@
 const busylight = require("busylight");
 const light = busylight.get();
 
-const command = process.argv[2];
+const commands = process.argv.splice(2);
 
-if (command === "police") {
+if (commands.indexOf("police") > -1) {
     light.blink(["red", "blue"], 150);
 }
-else if (!command) {    
+else if (commands.length === 0) {    
     light.blink(["red", "orange", "green", "blue", "purple"], 150);
 }
 else {
-    let color = command;
+    let colors = commands.filter(command => !/^--/.test(command));
 
-    if (command === "busy") {
-        color = "red";
+    if (commands.indexOf("busy") > -1) {
+        colors = [ "red" ];
     }
-    else if (command === "free") {
-        color = "green";
+    else if (commands.indexOf("free") > -1) {
+        colors = [ "green" ];
     }
 
-    if (process.argv.indexOf("--pulse") > -1) {
-        light.pulse(color, 500);
+    if (commands.indexOf("--pulse") > -1) {
+        light.pulse(colors, 500);
     }    
-    else if (process.argv.indexOf("--blink") > -1) {
-        light.blink(color, 500);
+    else if (commands.indexOf("--blink") > -1) {
+        light.blink(colors, 500);
+    }
+    else if (colors.length > 1) {
+        process.stdout.write("cannot set light to multiple colors\n");
     }
     else {
-        light.light(color);
+        light.light(colors[0]);
     }
 }
