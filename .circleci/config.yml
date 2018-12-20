@@ -1,0 +1,14 @@
+version: 2
+jobs:
+  static_analysis:
+    docker:
+      - image: node:10
+    steps:
+      - checkout
+      - run: npm install
+      - run: npm test
+workflows:
+  version: 2
+  continuous_integration:
+    jobs:
+      - static_analysis
