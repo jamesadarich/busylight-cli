@@ -1,5 +1,7 @@
 # busylight-cli
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jamesadarich/busylight-cli.svg)](https://greenkeeper.io/)
+
 Set your kuando busylight - no messing
 
 ```
