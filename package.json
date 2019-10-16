@@ -18,7 +18,7 @@
   "author": "James Richford",
   "license": "MIT",
   "dependencies": {
-    "busylight": "^0.3.1"
+    "busylight": "^0.4.0"
   },
   "devDependencies": {
     "@types/node": "^8.0.25",
