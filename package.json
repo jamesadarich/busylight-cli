@@ -1,6 +1,6 @@
 {
   "name": "busylight-cli",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "CLI for kuando busylight",
   "main": "index.js",
   "repository": {
@@ -18,7 +18,7 @@
   "author": "James Richford",
   "license": "MIT",
   "dependencies": {
-    "busylight": "^0.3.1"
+    "busylight": "^0.4.0"
   },
   "devDependencies": {
     "@types/node": "^8.0.25",
