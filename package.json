@@ -1,6 +1,6 @@
 {
   "name": "busylight-cli",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "CLI for kuando busylight",
   "main": "index.js",
   "repository": {
